@@ -45,9 +45,9 @@ Use USB 1 Chat with a custom submix (not mix-minus).
 
 USB 1 Chat send to PC or Discord input:
 
-- Include Combo 1 (AT2035)
-- Exclude USB 1 Stereo (PC audio)
-- Exclude USB 1 Chat
+- ✅ Include Combo 1 (AT2035)
+- ❌ Exclude USB 1 Stereo (PC audio)
+- ❌ Exclude USB 1 Chat
 
 ## 4. Combo 1 Processing Baseline
 
