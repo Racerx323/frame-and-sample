@@ -34,3 +34,7 @@ This repository separates platform-specific implementation details from hardware
 ## Guiding Principle
 
 Keep ecosystem assets isolated and keep hardware guidance reusable across ecosystems.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0. See [LICENSE.md](LICENSE.md) for details.
