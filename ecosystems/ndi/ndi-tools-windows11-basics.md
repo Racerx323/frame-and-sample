@@ -31,3 +31,10 @@ Reference: [Webcam Input | Docs and Guides](https://docs.ndi.video/all/using-ndi
 
 - Ensure source and receiver are on the same network segment.
 - If prompted by Windows Firewall, allow NDI Tools on Private networks.
+
+## Related Guides
+
+- NDI ecosystem index: [README.md](README.md)
+- RODECaster Video S audio and Discord setup: [../../hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md](../../hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md)
+- Network preparation: [../../docs/network-prep.md](../../docs/network-prep.md)
+- AV sync basics: [../../docs/av-sync-basics.md](../../docs/av-sync-basics.md)

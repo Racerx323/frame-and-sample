@@ -8,6 +8,11 @@ Ecosystem folders isolate platform-specific configuration and operational workfl
 - [ndi/README.md](ndi/README.md)
 - [wirecast/README.md](wirecast/README.md)
 
+## Recommended Paths
+
+- Windows NDI starter: [ndi/ndi-tools-windows11-basics.md](ndi/ndi-tools-windows11-basics.md)
+- Pair NDI with hardware audio routing: [../hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md](../hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md)
+
 ## Rules
 
 - Keep assets and scripts scoped to a single ecosystem.

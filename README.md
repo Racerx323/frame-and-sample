@@ -20,6 +20,11 @@ This repository separates platform-specific implementation details from hardware
 - NDI quick start for Windows 11: [ecosystems/ndi/ndi-tools-windows11-basics.md](ecosystems/ndi/ndi-tools-windows11-basics.md)
 - RODECaster Video S audio and Discord setup: [hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md](hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md)
 
+## Recommended Workflow Paths
+
+- NDI-first path: [ecosystems/ndi/ndi-tools-windows11-basics.md](ecosystems/ndi/ndi-tools-windows11-basics.md) -> [hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md](hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md) -> [docs/av-sync-basics.md](docs/av-sync-basics.md)
+- Audio-first path: [hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md](hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md) -> [ecosystems/ndi/ndi-tools-windows11-basics.md](ecosystems/ndi/ndi-tools-windows11-basics.md) -> [docs/network-prep.md](docs/network-prep.md)
+
 ## Initial Scope
 
 - Ecosystems: OBS Studio, NDI, Wirecast

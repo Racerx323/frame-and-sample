@@ -138,3 +138,11 @@ Rule of thumb on bandwidth:
 - [Does the RODECaster Video have 4K support?](https://help.rode.com/hc/en-us/articles/10802698922639-Does-the-R%C3%98DECaster-Video-have-4k-support)
 - [Getting started with NDI with the RODECaster Video](https://help.rode.com/hc/en-us/articles/13236299094927-Getting-started-with-NDI-with-the-R%C3%98DECaster-Video)
 - [NDI Screen Capture HX](https://docs.ndi.video/all/using-ndi/ndi-tools/ndi-tools-for-windows/screen-capture-hx)
+
+## Related Guides
+
+- Audio interfaces index: [README.md](README.md)
+- NDI basics on Windows 11: [../../ecosystems/ndi/ndi-tools-windows11-basics.md](../../ecosystems/ndi/ndi-tools-windows11-basics.md)
+- NDI ecosystem index: [../../ecosystems/ndi/README.md](../../ecosystems/ndi/README.md)
+- Network preparation: [../../docs/network-prep.md](../../docs/network-prep.md)
+- AV sync basics: [../../docs/av-sync-basics.md](../../docs/av-sync-basics.md)

@@ -12,6 +12,7 @@ NDI sender/receiver and bridge workflow references.
 ## Guides
 
 - NDI basics on Windows 11: [ndi-tools-windows11-basics.md](ndi-tools-windows11-basics.md)
+- RODECaster Video S audio companion: [../../hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md](../../hardware/audio-interfaces/rode-caster-video-s-windows11-discord-ndi.md)
 
 ## Workflow
 

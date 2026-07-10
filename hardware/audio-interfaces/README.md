@@ -18,3 +18,4 @@ Device setup patterns for stable clocking and clean routing.
 ## Guides
 
 - RODECaster Video S on Windows 11 for Discord and NDI: [rode-caster-video-s-windows11-discord-ndi.md](rode-caster-video-s-windows11-discord-ndi.md)
+- NDI setup companion guide: [../../ecosystems/ndi/ndi-tools-windows11-basics.md](../../ecosystems/ndi/ndi-tools-windows11-basics.md)
