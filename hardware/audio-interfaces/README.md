@@ -14,3 +14,7 @@ Device setup patterns for stable clocking and clean routing.
 1. Lock interface and host to the same sample rate.
 2. Disable conflicting system-level audio enhancements.
 3. Document monitoring path and potential drift points.
+
+## Guides
+
+- RODECaster Video S on Windows 11 for Discord and NDI: [rode-caster-video-s-windows11-discord-ndi.md](rode-caster-video-s-windows11-discord-ndi.md)

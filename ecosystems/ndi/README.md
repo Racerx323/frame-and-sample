@@ -9,6 +9,10 @@ NDI sender/receiver and bridge workflow references.
 - bridge-presets/
 - scripts/
 
+## Guides
+
+- NDI basics on Windows 11: [ndi-tools-windows11-basics.md](ndi-tools-windows11-basics.md)
+
 ## Workflow
 
 1. Confirm network readiness in [../../docs/network-prep.md](../../docs/network-prep.md).
