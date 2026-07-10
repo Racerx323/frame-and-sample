@@ -1,4 +1,4 @@
-# <Guide Title>
+# Guide Title
 
 ## 1. Prerequisites
 
