@@ -14,6 +14,9 @@ This repository separates platform-specific implementation details from hardware
 - Reusable templates: [templates/README.md](templates/README.md)
 - Contributing: [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md)
 - Security policy: [.github/SECURITY.md](.github/SECURITY.md)
+- Community and governance: [.github/GOVERNANCE.md](.github/GOVERNANCE.md)
+- Issue templates: [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/)
+- Open an issue: [GitHub issue chooser](https://github.com/Racerx323/frame-and-sample/issues/new/choose)
 
 ## New Guides
 

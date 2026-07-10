@@ -27,6 +27,8 @@ There are many ways to contribute, from writing documentation to improving templ
 
 If you're unsure about your idea, feel free to [Open an issue][new-issue] first and discuss it.
 
+Please choose the most appropriate issue template when opening a new issue (bug report, feature request, documentation issue, or question).
+
 ## Getting Started
 
 To set up the project locally for contribution:
