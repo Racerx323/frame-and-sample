@@ -36,15 +36,15 @@ To set up the project locally for contribution:
 1. **Fork** this repository to your GitHub account.
 2. **Clone** your fork locally:
 
-	```bash
-	git clone https://github.com/your-username/frame-and-sample.git
-	```
+    ```bash
+    git clone https://github.com/your-username/frame-and-sample.git
+    ```
 
 3. **Navigate** into the project directory:
 
-	```bash
-	cd frame-and-sample
-	```
+    ```bash
+    cd frame-and-sample
+    ```
 
 4. **Create** a branch for your change.
 5. **Edit** the relevant docs, templates, or structure files.
@@ -85,23 +85,23 @@ Pull Requests (PRs) are very welcome. If you're planning a large or significant 
 1. Fork this repository to your GitHub account. Ensure your local repository is up-to-date.
 2. Create a new branch from `main` with a descriptive name:
 
-	```bash
-	git checkout -b descriptive-branch-name
-	```
+    ```bash
+    git checkout -b descriptive-branch-name
+    ```
 
 3. Make your changes, keeping your commits clear and organized.
-	1. Follow existing style guidelines and conventions. [Google style guides][style-guide] are used for this project.
-	2. Keep markdown formatting and link style consistent with existing files.
-4. Review your changes and verify links.
-5. Update documentation accordingly.
-6. Commit your change using clear and concise commit messages.
-7. Push your branch to your fork:
+4. Follow existing style guidelines and conventions. [Google style guides][style-guide] are used for this project.
+5. Keep markdown formatting and link style consistent with existing files.
+6. Review your changes and verify links.
+7. Update documentation accordingly.
+8. Commit your change using clear and concise commit messages.
+9. Push your branch to your fork:
 
-	```bash
-	git push -u origin descriptive-branch-name
-	```
+    ```bash
+    git push -u origin descriptive-branch-name
+    ```
 
-8. Open a pull request on the GitHub repository against the `main` branch and provide a detailed description of your changes.
+10. Open a pull request on the GitHub repository against the `main` branch and provide a detailed description of your changes.
 
 ## Security Vulnerability Reporting
 

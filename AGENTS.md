@@ -1,3 +1,5 @@
+# Frame and Sample
+
 ## Repository Working Rules
 
 This repository is documentation-first and organized by two boundaries:
@@ -7,7 +9,7 @@ This repository is documentation-first and organized by two boundaries:
 
 ## Documentation Placement
 
-- Put platform workflow guides, presets, and scripts in the matching ecosystems/<name>/ path.
+- Put platform workflow guides, presets, and scripts in the matching ecosystems/-name-/ path.
 - Put device setup and signal-chain references in hardware/.
 - Put shared concepts and standards in docs/.
 - Put reusable authoring patterns in templates/.

@@ -1,3 +1,5 @@
+# Pull Request Template
+
 ## Summary
 
 Describe what changed and why.
@@ -17,7 +19,7 @@ Describe what changed and why.
 
 ## Placement Check
 
-- [ ] Ecosystem-specific content stays inside ecosystems/<name>/
+- [ ] Ecosystem-specific content stays inside ecosystems/name/
 - [ ] Hardware-agnostic content stays inside hardware/
 - [ ] Shared concepts stay inside docs/
 
