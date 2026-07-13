@@ -1,0 +1,31 @@
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Runtime artifacts
+*.log
+*.pid
+*.tmp
+
+# Local captures and exports
+captures/
+exports/
+recordings/
+
+# Secrets and local environment files
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# Tooling
+.vscode/settings.json
+
+#vexp
+.vexp/index.lock
+.vexp/index.db-shm
+.vexp/index.db-wal
+.vexp/index.db

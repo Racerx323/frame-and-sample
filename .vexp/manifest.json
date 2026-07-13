@@ -1,0 +1,36 @@
+{
+  "file_hashes": {
+    ".github/CODE_OF_CONDUCT.md": "ccedbdb3c88a0575d2955f5d8e1102ea5172caa87a3316d22a9bb6220282d088",
+    ".github/CONTRIBUTING.md": "827adb1e7d71e997d4cd6fdb3180a072c746643bb269690f88e6931edc877dfd",
+    ".github/PULL_REQUEST_TEMPLATE.md": "9a46fda1eb86993d3bdb88ccd60eef57773c9ecf82e4d6f19202daf0c03d5943",
+    ".github/README.md": "cd0a6df829c70337cad2df71e198b75e8de0e813ad7d9e6c810771518877ff9c",
+    ".github/SECURITY.md": "022eed0cd9464beb4fee3758ea5a3e7fc0f5639bf3be05ed523f5d60b8bc4d62",
+    "AGENTS.md": "62f75098d321ec5467bccd920fdeda447b6b08aaf94deac0dff29e9bf935bdcb",
+    "LICENSE.md": "d8cc175db55c0f01f6803280bff205099aef6b3965feeb430f7b71af583c7345",
+    "README.md": "1d1ce470a39600975293b01c7c2d89df5102aefb76284fcb7fc494b9272026e9",
+    "docs/README.md": "0a9b7d687ca67cf9e2dcca741ec8b4dae704a82a5bf2c002008bb4c5a6254b6f",
+    "docs/av-sync-basics.md": "30531a28b9a50ece03efea92cfae2da835f338bcadbc4e426f36258d21c50992",
+    "docs/glossary.md": "580e0606fd8483e8567433fdade4aabf3e2a65c000b0dc69d045fec09ccdf2a1",
+    "docs/network-prep.md": "7958fe6f0267a1da447a00238d9cff51ee2f608b298336b46d28e3dcb97e7bfd",
+    "ecosystems/README.md": "f69f6678f80b3a20ec3356516a74bd6ec03379f49d0686778dfbfe9b0aef0aae",
+    "ecosystems/ndi/README.md": "2231b04b21e3527a3e6b64a1b0ef604c5b925412d54818dc9e3b9ff5cda22a08",
+    "ecosystems/obs-studio/README.md": "08f31e29dd4ea84c777e0cb558bf0d5d5145a4cf93c7b15e3554500e66793891",
+    "ecosystems/wirecast/README.md": "0d2967e65a97c2ff1d400f22cc5cdd224e5a76a2abcc733def1163522c39d7f3",
+    "hardware/README.md": "683c76b62f217d53593f40249e21c0e0088102a53b1088564ef7913a09faf622",
+    "hardware/audio-interfaces/README.md": "58b6669e7c8a02e07754fa3a75a44fc0b1ec08cc52e82ee312f8cccdf74a6986",
+    "hardware/cameras/README.md": "508a1ea7a2ce3ce0864f83989114c9f1815e33a7355c0cf32aa1fe585e2adfe8",
+    "hardware/capture-cards/README.md": "c4512a4b6ed7170a60d3b581cd7ccbf2bfd7dd4aae28e27fda1db3d2e3cda56c",
+    "templates/README.md": "5647ce83d25fd0bbdc019b0c37acdad31607a5910177485b8d2adad28de92019",
+    "templates/guide-template.md": "1b28df16e6ae3fec5b0dd21634b778d10232069af4f16ec03a7e209b2afedfd8",
+    "templates/script-template.md": "4072f84c4214bd60b1cd3f926db3969f5f2ecff8352969895fc9cd31ed936a2e"
+  },
+  "indexed_at_commit": "6f376048691b2960534ba46418419f2c7e34622a",
+  "indexed_at_timestamp": "2026-07-10T16:30:30.123855487+00:00",
+  "schema_version": 3,
+  "stats": {
+    "total_edges": 113,
+    "total_files": 23,
+    "total_nodes": 136
+  },
+  "vexp_version": "2.1.4"
+}
