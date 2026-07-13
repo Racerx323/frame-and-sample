@@ -23,3 +23,9 @@ recordings/
 
 # Tooling
 .vscode/settings.json
+
+#vexp
+.vexp/index.lock
+.vexp/index.db-shm
+.vexp/index.db-wal
+.vexp/index.db
