@@ -27,6 +27,12 @@ This repository is documentation-first and organized by two boundaries:
 - Hardware: audio-interfaces, capture-cards, cameras
 
 
+## CodeRabbit reviews
+
+CodeRabbit requires external network access. Run all `coderabbit review` commands with network escalation (`sandbox_permissions: "require_escalated"`). Request the reusable approval prefix `["coderabbit", "review"]`.
+
+Do not wait for a sandboxed review to time out. If it stalls while connecting, rerun it immediately with network escalation.
+
 ## vexp <!-- vexp v2.1.7 -->
 
 **MANDATORY: use `run_pipeline` - do NOT grep or glob the codebase.**
