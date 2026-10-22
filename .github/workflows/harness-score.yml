@@ -1,0 +1,128 @@
+---
+name: Harness Score
+
+'on':
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    name: Measure repository harness
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd  # v6.0.2
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444  # v5
+        with:
+          node-version: '26.4.0'
+
+      - name: Test badge publication safeguards
+        run: node --test tests/harness-score-workflow.test.cjs
+
+      - name: Measure harness maturity
+        uses: paladini/harness-score@b8c3941ba49edcf69f973e26c1940dae487f7c7a  # v1.8.3
+        with:
+          version: '1.8.3'
+          min-level: '0'
+          gate: maturity
+          include-user-harness: 'false'
+          include-system-harness: 'false'
+          comment: 'false'
+          badge: harness-badge.svg
+          report: harness-report.md
+
+      - name: Upload complete scan reports and badge
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4.6.2
+        with:
+          name: harness-score
+          path: |
+            harness-report.json
+            harness-report.md
+            harness-badge.svg
+          if-no-files-found: error
+          retention-days: 14
+
+  publish:
+    name: Publish main maturity badge
+    needs: scan
+    if: >-
+      github.repository == 'Racerx323/frame-and-sample' &&
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    concurrency:
+      group: harness-score-badge
+      cancel-in-progress: false
+    steps:
+      - name: Download this run's complete scan
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093  # v4.3.0
+        with:
+          name: harness-score
+          path: harness-score
+
+      - name: Update isolated badges branch
+        uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd  # v8
+        with:
+          script: |
+            const fs = require('node:fs');
+            const repo = context.repo;
+            const mainIsCurrent = async () => {
+              const { data } = await github.rest.git.getRef({ ...repo, ref: 'heads/main' });
+              return data.object.sha === context.sha;
+            };
+            if (!await mainIsCurrent()) {
+              core.notice('Skipping badge publication: main has advanced.');
+              return;
+            }
+            const report = JSON.parse(fs.readFileSync('harness-score/harness-report.json', 'utf8'));
+            if (report.gate !== 'maturity' || report.verdicts?.maturity?.status !== 'complete') {
+              throw new Error('Badge publication requires a complete repository maturity scan.');
+            }
+            const badge = fs.readFileSync('harness-score/harness-badge.svg', 'utf8');
+            if (!badge.includes('<svg')) throw new Error('Harness badge is missing its SVG root.');
+
+            let previous;
+            try {
+              const { data: ref } = await github.rest.git.getRef({ ...repo, ref: 'heads/badges' });
+              const { data } = await github.rest.git.getCommit({ ...repo, commit_sha: ref.object.sha });
+              previous = data;
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
+            const { data: tree } = await github.rest.git.createTree({
+              ...repo,
+              ...(previous ? { base_tree: previous.tree.sha } : {}),
+              tree: [{ path: 'harness-badge.svg', mode: '100644', type: 'blob', content: badge }],
+            });
+            if (tree.sha === previous?.tree.sha) {
+              core.notice('Harness badge is unchanged.');
+              return;
+            }
+            if (!await mainIsCurrent()) {
+              core.notice('Skipping badge publication: main advanced during preparation.');
+              return;
+            }
+            const { data: commit } = await github.rest.git.createCommit({
+              ...repo,
+              message: `Update harness badge for ${context.sha}`,
+              tree: tree.sha,
+              parents: previous ? [previous.sha] : [],
+            });
+            if (previous) {
+              await github.rest.git.updateRef({ ...repo, ref: 'heads/badges', sha: commit.sha, force: false });
+            } else {
+              await github.rest.git.createRef({ ...repo, ref: 'refs/heads/badges', sha: commit.sha });
+            }

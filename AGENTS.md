@@ -26,6 +26,19 @@ This repository is documentation-first and organized by two boundaries:
 - Ecosystems: obs-studio, ndi, wirecast
 - Hardware: audio-interfaces, capture-cards, cameras
 
+## Harness Score
+
+- When changing `.github/workflows/harness-score.yml` or its publication tests,
+  run `node --test tests/harness-score-workflow.test.cjs`.
+- Keep scoring repository-only (`gate: maturity`); leave user and system harness
+  scopes disabled.
+- Preserve the pilot's `min-level: 0` until a higher threshold is explicitly
+  approved. Incomplete or malformed scans must still fail.
+- Publish badges only after successful, trusted `main` scans. Keep scan access
+  read-only and badge publication write access confined to its separate job.
+- Keep version pins in the workflow and installation details in
+  `homelab-docs/docs/development-tool-stack.md`; avoid duplicating them here.
+
 
 ## CodeRabbit reviews
 
