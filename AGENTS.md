@@ -28,6 +28,8 @@ This repository is documentation-first and organized by two boundaries:
 
 ## Harness Score
 
+- Use `$harness-engineering` for harness audits and requested remediation;
+  audit-only requests must leave repository files unchanged.
 - When changing `.github/workflows/harness-score.yml` or its publication tests,
   run `node --test tests/harness-score-workflow.test.cjs`.
 - Keep scoring repository-only (`gate: maturity`); leave user and system harness
