@@ -8,7 +8,9 @@ The [device setup guide](rode-caster-video-s-windows11-discord-ndi.md) uses one 
 
 | What you want to do | Where to start |
 | --- | --- |
-| Set Windows defaults and build the mic-only Chat mix | [Windows audio devices](rode-caster-video-s-windows11-discord-ndi.md#2-windows-11-audio-devices) and [RØDECaster routing](rode-caster-video-s-windows11-discord-ndi.md#3-rcvs-routing) |
+| Set the default device and default communications device for playback and recording | [Windows audio devices](rode-caster-video-s-windows11-discord-ndi.md#2-windows-11-audio-devices) |
+| Choose the full console mix or just your mic for an OBS recording or stream | [Recording or streaming the console mix](rode-caster-video-s-windows11-discord-ndi.md#recording-or-streaming-the-console-mix) |
+| Select Discord’s input and output and build the mic-only Chat mix | [Discord voice calls](rode-caster-video-s-windows11-discord-ndi.md#discord-voice-calls) and [RØDECaster routing](rode-caster-video-s-windows11-discord-ndi.md#3-rcvs-routing) |
 | Reduce keyboard pickup without cutting off quiet speech | [Mic placement](rode-caster-video-s-windows11-discord-ndi.md#6-mic-placement), [Combo 1 processing](rode-caster-video-s-windows11-discord-ndi.md#4-combo-1-processing-baseline), and [Discord settings](rode-caster-video-s-windows11-discord-ndi.md#5-discord-settings) |
 | Confirm teammates hear your voice without desktop audio or an echo | [Check the complete route](rode-caster-video-s-windows11-discord-ndi.md#check-the-complete-route) |
 | Share a Windows game and its sound directly | [Stream a Windows game with Discord Go Live](rode-caster-video-s-windows11-discord-ndi.md#stream-a-windows-game-with-discord-go-live) |

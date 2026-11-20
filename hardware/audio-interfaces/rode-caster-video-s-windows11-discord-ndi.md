@@ -24,14 +24,22 @@
 
 ## 2. Windows 11 Audio Devices
 
-In **Settings → System → Sound**, choose these defaults for a PC used for voice calls. Windows device labels can vary. Identify each device by its Stereo or Chat name and its direction.
+Open **Settings → System → Sound → More sound settings**. On the **Playback** and **Recording** tabs, right-click the RODECaster Video S device named **Stereo** or **Chat** and choose the role shown below.
 
-| Windows setting | USB 1 device | What it carries |
+| Sound tab | Default Device | Default Communications Device |
 | --- | --- | --- |
-| Default output | RODECaster Video S Stereo | Desktop and application playback to the console |
-| Default input | RODECaster Video S Chat | The mic-only send configured below, for apps using the Windows default |
+| Playback (output) | Stereo — desktop and game audio | Chat — incoming callers |
+| Recording (input) | Chat — mic only | Chat — mic only |
 
-In a production app that needs the wider console mix, select the Stereo recording input explicitly. In Discord, select Chat explicitly for both input and output.
+Both Windows recording defaults use the mic-only Chat mix configured in section 3.
+
+### Recording or streaming the console mix
+
+A production app such as OBS Studio records a show or streams it to an audience. If you want viewers to hear your mic and other sources mixed at the console, such as game audio or clips, select **RODECaster Video S Stereo** as the app’s audio capture input. The app then receives the sources included in the console’s USB 1 Stereo mix. Make this selection in the app only. If you capture the game separately and need just your voice from the console, use **Chat** instead.
+
+### Discord voice calls
+
+In Discord’s **User Settings → Voice & Video**, set **Input Device** and **Output Device** to **RODECaster Video S Chat**. The input sends your mic to the call. The output sends callers to the console’s USB 1 Chat channel so you can adjust their volume separately from the game.
 
 ## 3. RCVS Routing
 
